@@ -61,6 +61,16 @@ app.get('/about', (req, res) => {
 		
 	});
 });
+
+app.get('/projects', (req, res) => {
+
+	res.render('projects.hbs', {
+
+		pageTitle: "Portforlio Page",
+		welcomeMessage: "Welcome to the Portfolio Page"
+		
+	});
+});
 app.listen(port, ()=>{
 
 	console.log('server running on port: ', port);
